@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shree Shivkrupa Farashkhana - Traditional Indian Event Management Services" />
+  <title>Shree Shivkrupa Farashkhana</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href ="services.css" />
+  <link rel="stylesheet" href ="about.css" />
+  <link rel="stylesheet" href ="contact.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🎉 Shree Shivkrupa Farashkhana</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Traditional Touch for Modern Celebrations</h1>
+    <p>From weddings to vidhi rituals, we the team of SHREE SHIVKRUPA FARASHKHANA are here to make each and every single event of yours memorable by managing everything with grace & devotion.</p>
+    <a href="#services" class="btn">Explore Our Services</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Event Services</h2>
+    <div class="service-cards">
+	<div class="card"><h3>🔔 Ring Ceremony</h3><p>Stage, backdrop & couple theme arrangements.</p></div>
+      <div class="card"><h3>💍 Marriage Ceremony</h3><p>Mandap, stage, garlands, varmala setup & full wedding décor.</p></div>
+      <div class="card"><h3>👶 Baby Shower</h3><p>Traditional decorations, dohalsujan items & rituals managed end-to-end.</p></div>
+      <div class="card"><h3>🎂 Birthday Party</h3><p>Balloon décor, cake table, welcome standee & more.</p></div>
+      <div class="card"><h3>🪔 Funeral & Rituals</h3><p>Sadri, shamiyana, chairs, rituals setup with full sensitivity.</p></div>
+	  <div class="card"><h3> Get-togethers</h3><p> Tables, chairs, lighting , simple Decor that feels hearty and photobooths to capture all the beautful Memories with your loved ones.</p></div>
+      <div class="card"><h3>✨ Custom Functions</h3><p>House warming, pujas, Navratri, Diwali – all covered with cultural touch.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Event Memories</h2>
+    <div class="gallery-images">
+      <img src="wed.jpeg" alt="Wedding Setup" />
+      <img src="baby.jpg" alt="Baby Shower Decor" />
+      <img src="death.jpeg" alt="Funeral Arrangement" />
+      <img src="bday2.webp" alt="Birthday Celebration" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Shree Shivkrupa Farashkhana is your one-stop traditional event partner with 15+ years of experience in managing Indian occasions. Based in Gujarat, we bring divinity and beauty into every function we handle – from auspicious beginnings to respectful farewells.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Mobile Number" required />
+      <textarea name="message" placeholder="Your Message / Event Type" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shree Shivkrupa Farashkhana. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox"><img id="lightbox-img" src="" alt="Expanded View" /></div>
+
+  <!-- Interactivity Script -->
+  <script>
+    // Lightbox functionality
+    const images = document.querySelectorAll('.gallery-images img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    // Fade-in card animation
+    const cards = document.querySelectorAll('.card');
+    function revealOnScroll() {
+      cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          card.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
