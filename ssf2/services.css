@@ -1,0 +1,79 @@
+/* style-services.css - matches index theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf4;
+  color: #3d2b2b;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe6cc;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8b4c39;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #ffd9b3;
+  color: #3b241c;
+}
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.services h2 {
+  font-size: 2.5rem;
+  color: #a04a32;
+  margin-bottom: 2rem;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  background-color: #fff3e6;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card h3 {
+  color: #b05030;
+  margin-bottom: 0.8rem;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #5f3c3c;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe6cc;
+  font-size: 0.9rem;
+  color: #6b3e2e;
+}

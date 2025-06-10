@@ -1,0 +1,90 @@
+/* style.css for index.html */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf4;
+  color: #3d2b2b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe6cc;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8b4c39;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #ffd9b3;
+  color: #3b241c;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #fff3e6;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #a04a32;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6e4d41;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #cc6633;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #a04a32;
+}
+
+.services, .gallery, .about, .contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffe6cc;
+  font-size: 0.9rem;
+  color: #6b3e2e;
+}
